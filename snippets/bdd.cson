@@ -1,0 +1,73 @@
+'.source.coffee':
+  'After Each (BDD)':
+    'prefix': 'ae'
+    'body': """afterEach -> $0"""
+  'After (BDD)':
+    'prefix': 'after'
+    'body': """after -> $0"""
+  'Before Each (BDD)':
+    'prefix': 'be'
+    'body': """beforeEach -> $0"""
+  'Before (BDD)':
+    'prefix': 'before'
+    'body': """before -> $0"""
+  'Describe (BDD:Async)':
+    'prefix': 'desd'
+    'body': """
+      describe '${1:suite}', (done) ->
+        $0
+    """
+  'Describe Section (BDD)':
+    'prefix': 'dessection'
+    'body': """
+      describe.section '${1:suite}', ->
+        $0
+    """
+  'Describe (BDD)':
+    'prefix': 'des'
+    'body': """
+      describe '${1:suite}', ->
+        $0
+    """
+  'it (BDD:async)':
+    'prefix': 'itd'
+    'body': """
+      it '${1:does}', (done) ->
+        $0
+    """
+  'it (BDD)':
+    'prefix': 'it'
+    'body': """
+      it '${1:does}', ->
+        $0
+    """
+  'it.boolean (BDD)':
+    'prefix': 'itbool'
+    'body': """
+      it.boolean '${1:does}', ->
+        $0
+    """
+  'it with `code` (BDD)':
+    'prefix': 'itcode'
+    'body': """
+      it '`${1:does}`', ->
+        $0
+    """
+  'it.radio (BDD)':
+    'prefix': 'itradio'
+    'body': """
+      it.radio '${1:prop}', [${2}], ->
+        $0
+    """
+  'it.select (BDD)':
+    'prefix': 'itselect'
+    'body': """
+      it.select '${1:prop}', [${2}], ->
+        $0
+    """
+  '@subtitle (BDD)':
+    'prefix': 'subtitle'
+    'body': """@subtitle '${1}'$0"""
+  '@title (BDD)':
+    'prefix': 'title'
+    'body': """@title ${1:true}"""
