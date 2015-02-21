@@ -1,0 +1,18 @@
+# Comments
+'.source.coffee':
+  'Comment - Horizontal Rule':
+    'prefix': 'hr'
+    'body': """# ----------------------------------------------------------------------"""
+  '@param':
+    'prefix': 'pm'
+    'body': """@param $0"""
+  '@returns':
+    'prefix': 'pr'
+    'body': """@returns $0"""
+  'Comment Block':
+    'prefix': 'qq'
+    'body': """
+      ###
+      $0
+      ###
+    """
