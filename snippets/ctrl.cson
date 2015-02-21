@@ -1,0 +1,35 @@
+'.source.coffee':
+  'Ctrl':
+    'prefix': 'ctrl'
+    'body': """
+      Ctrl.define
+        '${1:type}':
+          init: ->
+          ready: ->
+          destroyed: ->
+          model: ->
+          api: {}
+          helpers: {}
+          events: {}"""
+  'Ctrl Methods':
+    'prefix': 'ctrlm'
+    'body': """
+      init: ->
+      ready: ->
+      destroyed: ->
+      model: ->
+      api: {}
+      helpers: {}
+      events: {}
+    """
+  'Reactive Property':
+    'prefix': 'prop'
+    'body': """${1:prop}: (value) -> @prop '$1', value, default:${2:default}"""
+
+'.text.html':
+  'Ctrl':
+    'prefix': 'ctrl'
+    'body': """{{> ctrl type='$1'}}"""
+  'Ctrl (with data)':
+    'prefix': 'ctrld'
+    'body': """{{> ctrl type='$1' data=${2:data} }}"""
