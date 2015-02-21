@@ -1,0 +1,13 @@
+{
+  "name": "my-snippets",
+  "main": "index.coffee",
+  "version": "0.0.1",
+  "description": "A collection of snippets I use on a daily basis",
+  "repository": "https://github.com/hharnisc/my-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

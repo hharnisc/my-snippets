@@ -1,0 +1,27 @@
+# Stampit
+'.source.coffee':
+  'stampit.compose':
+    'prefix': 'scom'
+    'body': '${1:MyComposedStamp} = stampit.compose($2)'
+  'stampit().enclose':
+    'prefix': 'senc'
+    'body': """
+      ${1:MyStamp} = stampit().enclose ->
+        @${2:foo} = ->
+
+        return @
+    """
+  'stampit().methods':
+    'prefix': 'smet'
+    'body': """
+      ${1:MyStamp} = stampit().methods(
+        ${2:foo}: ->
+      )
+    """
+  'stampit().state':
+    'prefix': 'ssta'
+    'body': """
+      ${1:MyStampState} = stampit().state(
+        ${2:key}: ${3:value}
+      )
+    """
