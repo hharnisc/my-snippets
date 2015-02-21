@@ -1,0 +1,17 @@
+# Console
+'.source.coffee':
+  'console.error':
+    'prefix': 'ce'
+    'body': """console.error '${1:error}'"""
+  'console.log':
+    'prefix': 'cl'
+    'body': """console.log '${1:title}', ${2:$1}$0"""
+  'console.log (text only)':
+    'prefix': 'cll'
+    'body': """console.log $0"""
+  'debugger':
+    'prefix': 'debug'
+    'body': """debugger"""
+  'trace':
+    'prefix': 'trace'
+    'body': """console.trace()"""
